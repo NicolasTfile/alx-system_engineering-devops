@@ -13,3 +13,4 @@ the script 11-lists lists all the files in different directories
 the script 12-file_type prints the type of the file named iamafile
 the script 13-symbolic_link creates a symbolic link to /bin/ls
 the script 14-copy_html copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory
+the script 100-lets_move moves all files beginning with an uppercase letter to the directory /tmp/u
