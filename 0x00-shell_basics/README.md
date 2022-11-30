@@ -9,3 +9,4 @@ the script 7-movethatfile moves the file betty from /tmp/ to /tmp/my_first_direc
 the script 8-firstdelete deletes the file betty from /tmp/my_first_directory
 the script 9-firstdirdeletion deletes the directory /tmp/my_first_directory
 the script 10-back changes the working directory to the previous one
+the script 11-lists lists all the files in different directories
