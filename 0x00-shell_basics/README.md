@@ -11,3 +11,4 @@ the script 9-firstdirdeletion deletes the directory /tmp/my_first_directory
 the script 10-back changes the working directory to the previous one
 the script 11-lists lists all the files in different directories
 the script 12-file_type prints the type of the file named iamafile
+the script 13-symbolic_link creates a symbolic link to /bin/ls
