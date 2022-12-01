@@ -15,3 +15,4 @@ the script 13-change_group changes the group owner to school for the file hello
 the script 100-change_owner_and_group changes the owner to vincent and the group owner to staff for all the files and directories in the working directory
 the script 101-symbolic_link_permissions changes the owner and the group owner of _hello to vincent and staff respectively
 the script 102-if_only changes the owner of the file hello to betty only if it is owned by the user guillaume
+the script 103-Star_Wars plays the StarWars IV episode in the terminal
