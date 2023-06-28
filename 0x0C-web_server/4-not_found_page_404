@@ -6,9 +6,9 @@ sudo apt-get install -y nginx
 
 sudo mkdir /etc/nginx/html
 sudo touch /etc/nginx/html/index.html
-sudo echo "Hello World!" > /etc/nginx/html/index.html
+echo "Hello World!" > /etc/nginx/html/index.html
 sudo touch /etc/nginx/html/404.html
-sudo echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
+echo "Ceci n'est pas une page" > /etc/nginx/html/404.html
 
 printf %s "server {
     listen 80;
