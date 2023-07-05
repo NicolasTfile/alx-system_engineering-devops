@@ -39,11 +39,11 @@ defaults
   timeout server 15s
   timeout http-request 10s
 
-frontend clickviral-tech-frontend
+frontend tfilehub-tech-frontend
     bind *:80
-    default_backend clickviral-tech-backend
+    default_backend tfilehub-tech-backend
 
-backend clickviral-tech-backend
+backend tfilehub-tech-backend
     balance roundrobin
     server 218909-web-01 18.234.105.207:80 check
     server 218909-web-02 34.234.204.132:80 check
