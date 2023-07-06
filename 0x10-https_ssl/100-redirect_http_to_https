@@ -41,11 +41,16 @@ frontend tfilehub-tech-frontend
 	default_backend tfilehub-tech-backend
 
 frontend tfilehub-tech-frontend-https
-	bind *:443 ssl crt /etc/haproxy/certs/tfilehub.tech.pem
+	bind *:443 ssl crt /etc/haproxy/certs/www.tfilehub.tech.pem
         http-request set-header X-Forwarded-Proto https
-	default_backend tfilehub-tech-backend
+	default_backend tfilehub-tech-backend-https
 
 backend tfilehub-tech-backend
 	balance roundrobin
 	server 218909-web-01 18.234.105.207:80 check
 	server 218909-web-02 34.234.204.132:80 check
+
+backend tfilehub-tech-backend-https
+	balance roundrobin                                                 server 218909-web-01 18.234.105.207:80 check
+        server 218909-web-02 34.234.204.132:80 check
+	http-request set-path /
