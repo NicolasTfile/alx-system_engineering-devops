@@ -1,4 +1,9 @@
 #!/usr/bin/env bash
-# Runs the whoami command
+# Check if the user argument is provided
+if [ -z "$1" ]; then
+  echo "Please provide a user as an argument."
+  exit 1
+fi
 
+# Run whoami command under the specified user
 sudo -u "$1" whoami
