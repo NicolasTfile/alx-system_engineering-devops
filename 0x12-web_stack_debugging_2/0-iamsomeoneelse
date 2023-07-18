@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 # Runs the whoami command
+
 sudo -u "$1" whoami
