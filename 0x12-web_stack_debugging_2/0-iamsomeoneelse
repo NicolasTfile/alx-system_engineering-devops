@@ -1,9 +1,4 @@
 #!/usr/bin/env bash
-# Check if the user argument is provided
-if [ -z "$1" ]; then
-  echo "Please provide a user as an argument."
-  exit 1
-fi
+# Run software as another user
 
-# Run whoami command under the specified user
 sudo -Hu "$1" whoami
