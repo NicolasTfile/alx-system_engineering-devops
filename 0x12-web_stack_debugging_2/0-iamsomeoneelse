@@ -6,4 +6,4 @@ if [ -z "$1" ]; then
 fi
 
 # Run whoami command under the specified user
-sudo -u "$1" whoami
+sudo -Hu "$1" whoami
