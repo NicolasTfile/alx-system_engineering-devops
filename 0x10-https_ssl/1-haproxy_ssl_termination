@@ -47,10 +47,10 @@ frontend tfilehub-tech-frontend-https
 
 backend tfilehub-tech-backend
 	balance roundrobin
-	server 218909-web-01 18.234.105.207:80 check
+	server 218909-web-01 34.227.93.54:80 check
 	server 218909-web-02 34.234.204.132:80 check
 
 backend tfilehub-tech-backend-https
-	balance roundrobin                                                 server 218909-web-01 18.234.105.207:80 check
+	balance roundrobin                                                 server 218909-web-01 34.227.93.54:80 check
         server 218909-web-02 34.234.204.132:80 check
 	http-request set-path /
