@@ -4,7 +4,7 @@ server {
     location /hbnb_static/ {
         alias /data/web_static/current/;
     }
-                                                                                                                          listen [::]:80 default_server ipv6only=on;
+    listen [::]:80 default_server ipv6only=on;
 
     # Use IP of server as domain name
     server_name 34.227.93.54;
