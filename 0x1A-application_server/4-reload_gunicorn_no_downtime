@@ -5,5 +5,5 @@ worker_pids=$(pgrep gunicorn)
 
 # Gracefully restart each worker
 for pid in $worker_pids; do
-    kill -HUP $pid
+    kill -HUP "$pid"
 done
